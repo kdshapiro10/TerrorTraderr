@@ -68,7 +68,6 @@ header, main {
 
 body {
     margin: 0 auto;
-    max-width: 1280px;
 }
 
 .sr-only {
@@ -578,7 +577,7 @@ form label {
 footer {
     color: white;
     background-color:  rgb(31, 31, 31);
-    width: 1400px;
+    width: 100%;
 }
 
 .footerImg {
