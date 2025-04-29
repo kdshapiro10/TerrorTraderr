@@ -61,6 +61,10 @@ html {
     background-color: #010101;
 }
 
+header, main, footer {
+    max-width: 1280px;
+}
+
 body {
     margin: 0 auto;
 }
