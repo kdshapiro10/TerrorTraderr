@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Terror Trader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">   
+    <script src="jquery-3.7.1.min.js"></script>
+    <link href= 
+    'jquery-ui.css' 
+              rel='stylesheet'> 
+    <script src="jquery-ui.js"></script>
+    <script src="Cycle2.js"></script>
+    <script src="scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img src="images/logo.png" alt="Terror Trader logo in yellow with skeleton head in middle">
+    <nav>
+        <h2 class="sr-only">Main Navigation</h2>
+        <ul>
+            <li><a href="#tabs">Events</a></li>
+            <li><a href="#movieWatchlist">Watchlist</a></li>
+            <li><a href="#autoLoad">Movies</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main">
+    <div id="welcome">
+        <h1>Welcome to Terror Trader!</h1>
+        <img src="images/terror_trader_frankenstein.jpg" alt="frankenstein in the terror trader store">
+        <p class="description">Discover Arizona's ONLY year round horror marketplace. 6000 sqft of horror props, Halloween masks, dark art, oddities and more! Terror Trader is filled with over 70 horror themed vendors and spine tingling photo ops!</p>
+        <p class="address">941 W Elliot Rd Ste 3, Chandler AZ </p>
+        <p class="phone">+1(490) 590-3481</p>
+        <p class="hours">Wed-Sun 12pm-8pm</p>
+    </div>
+    <div>
+        <div class="slideshowContainer">
+                <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-speed="400" data-cycle-timeout="3000">
+                    <a href="#" class="previous round">&#8249;</a>
+                    <img src="images/scary_snowman.jpg" alt="creepy snowman at terror trader" class="active">
+                    <img src="images/killer_clowns.jpg" alt="killer clowns terror trader">
+                    <img src="images/terror_trader_oddities.jpg" alt="oddities room at terror trader">
+                    <img src="images/terror_trader_vendors.jpg" alt="vendors at terror trader"> 
+                    <a href="#" class="next round">&#8250;</a>
+                </div>
+        </div>
+    </div>
+    <div id="grid">
+    <section id="events">
+        <h2>What's New?</h2>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Convention</a></li>
+                <li><a href="#tabs-2">Spook-a-roma</a></li>
+                <li><a href="#tabs-3">Podcast</a></li>
+            </ul>
+            <div id="tabs-1">
+                <h3>Gathering of the Ghouls</h3>
+                <p>150 horror vendors, celebrity guests, killer photo ops, a walk-thru haunted house, contests, prize giveaways, and creepy surprises around every corner. Whether you're a slasher fanatic, monster lover, or spooky season junkie—this is YOUR convention! </p>
+                <img src="images/gatheringoftheghouls.png" alt="terror trader event gathering of the ghouls banner" class="gotg">
+                <a href="https://gatheringoftheghouls.com/tickets" target="_blank">Buy Tickets!</a>   
+                <p>11:00AM-6:30PM</p>
+                <p>Rawhide Event Center<br>
+                    5244 South 48th Street<br>Chandler, AZ, 85226 United States</p>
+            </div>
+            <div id="tabs-2">
+                <h3>Spook-a-roma</h3>
+                <p>See you THURSDAYS at 8pm for spook o rama movie night with terror trader at pollack cinemas!</p>
+                <img src="images/spookaroma.png" alt="movie theater full on people birds eye view">
+                <img src="images/spookaroma1.png" alt="spook a roma terror trader poster" class="posterimg">
+            </div>
+            <div id="tabs-3">
+                <h3>Podcast</h3>
+                <p>CREEP CAST</p>
+                <img src="images/creepcast.png" alt="terror trader podcast cover on spotify for Creep Cast"><br>
+                <p class="description">Terror Trader is Arizona's ONLY year-round horror marketplace! Join their employees for a hilarious horror filled show that covers every inch of this creepy genre!</p>
+                <a href="https://open.spotify.com/show/3z0KdJNTFK5uHZn1tNR57n" target="_blank">Listen On Spotify</a>
+            </div>
+        </div>
+    </section>
+    <section id="movieWatchlist">
+        <h2>Movie Watchlist</h2>
+        <p>There are a bunch of movies out there that you haven't watched yet! </p>
+        <form>
+            <label for="item">Enter a Movie to Add to Your Watchlist:</label>
+            <span class="message">Please enter a movie and submit again</span>
+            <input type="text" name="item" id="item">
+            <input type="submit" name="itemSubmit" id="itemSubmit" value="Add to WatchList">
+        </form>
+        <strong class="hidden">WatchList</strong>
+        <ul id="watchlist"></ul>
+    <div id="watchlistModal" class="hidden">
+        <div id="innerModal">
+            <p></p>
+            <button id="confirm">Yes, Remove Movie</button>
+            <button id="cancel">No, Do Not Remove Movie</button>
+        </div>
+    </div>
+    <img src="images/horrorduel.png" alt="people in jason and michael meyers mask staring at eachother" class="whitespaceImg">
+    </section>
+</div>
+    <section id="autoLoad">
+        <h2>Popular Horror Movies</h2>
+        <div id="popularHorror"></div>
+    </section>
+</main>
+<footer>
+    <img src="images/logo.png" alt="terror trader logo" class="footerImg">
+    <p>&copy; 2025 Kylie Shapiro. All rights reserved.</p>
+</footer>
+</body>
+</html>
