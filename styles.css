@@ -577,21 +577,20 @@ form label {
 footer {
     color: white;
     background-color:  rgb(31, 31, 31);
-    justify-content: center;
 }
 
 .footerImg {
     width: 25%;
     height: 25%;
     position: relative;
-    margin-left: 500px;
+    margin-left: 550px;
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
 footer p {
     font-family: "Red Hat Text", sans-serif;
-    margin-left: 494px;
+    margin-left: 550px;
     padding-bottom: 30px;
     font-weight: bold;
     font-size: 16px;
