@@ -577,6 +577,7 @@ form label {
 footer {
     color: white;
     background-color:  rgb(31, 31, 31);
+    justify-content: center;
 }
 
 .footerImg {
